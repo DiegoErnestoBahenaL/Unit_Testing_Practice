@@ -14,7 +14,7 @@ namespace PrimeFactorsLib
             int iterator = 0;
             numberInternal = numberExtenal;
 
-            if (numberInternal > 1)
+            if (numberInternal > 1 && numberInternal < 10001)
             {
                 while (numberInternal != 1)
                 {

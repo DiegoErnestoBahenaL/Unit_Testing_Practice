@@ -7,7 +7,7 @@ namespace PrimeFactorsLibUnitTests
     public class PrimeFactorsUnitTests
     {
         [Fact]
-        public void Test1()
+        public void ValidTest()
         {
 
             //arrange
@@ -16,13 +16,41 @@ namespace PrimeFactorsLibUnitTests
             var primes = new PrimeFactors();
 
             //act
-
             string actual = primes.GetPrimeFactors(number);
             
             //assert
-
             Assert.Equal(expected, actual);
 
         }
+        [Fact]
+        public void NegativeNumbersTest()
+        {
+            //arrange
+            int number = -50;
+            string expected = null;
+            var primes = new PrimeFactors();
+
+            //act
+            string actual = primes.GetPrimeFactors(number);
+            
+            //assert
+            Assert.Equal(expected, actual);
+        }
+
+        [Fact]
+        public void LargeNumbersTest()
+        {
+            //arrange
+            int number = 20000000;
+            string expected = null;
+            var primes = new PrimeFactors();
+
+            //act
+            string actual = primes.GetPrimeFactors(number);
+            
+            //assert
+            Assert.Equal(expected, actual);
+        }
+
     }
 }
