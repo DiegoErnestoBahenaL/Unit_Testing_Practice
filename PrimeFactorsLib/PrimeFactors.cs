@@ -20,7 +20,7 @@ namespace PrimeFactorsLib
             int primeNumber = 2;
             numberInternal = numberExternal;
 
-            if (numberInternal > 1 && numberInternal < 10001)
+            if (numberInternal > 1 && numberInternal < 1001)
             {
                 while (numberInternal != 1)
                 {

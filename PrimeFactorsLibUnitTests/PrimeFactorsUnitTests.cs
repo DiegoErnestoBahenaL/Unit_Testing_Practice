@@ -45,7 +45,7 @@ namespace PrimeFactorsLibUnitTests
         public void LargeNumbersTest()
         {
             //arrange
-            int number = 20000000;
+            int number = 1001;
             string expected = null;
             var primes = new PrimeFactors();
 
