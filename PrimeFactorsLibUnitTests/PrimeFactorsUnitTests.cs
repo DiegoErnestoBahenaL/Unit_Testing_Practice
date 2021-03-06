@@ -7,9 +7,11 @@ namespace PrimeFactorsLibUnitTests
     public class PrimeFactorsUnitTests
     {
         [Fact]
+        
+         //This test will prove the method with a valid situation
         public void ValidTest()
         {
-
+            
             //arrange
             int number = 50;
             string expected = "2,5,5";
@@ -23,6 +25,7 @@ namespace PrimeFactorsLibUnitTests
 
         }
         [Fact]
+         //This test will prove the method returns a null (because of not valid arguments) with negative numbers
         public void NegativeNumbersTest()
         {
             //arrange
@@ -38,6 +41,7 @@ namespace PrimeFactorsLibUnitTests
         }
 
         [Fact]
+        //This test will prove the method returns a null (because of not valid arguments) with large numbers
         public void LargeNumbersTest()
         {
             //arrange
